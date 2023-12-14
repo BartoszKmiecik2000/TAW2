@@ -1,0 +1,37 @@
+(node:1704) Warning: Accessing non-existent property 'use' of module exports inside circular dependency
+(Use `node --trace-warnings ...` toated)
+Server is running at http://localho
+(Use `node --trace-warnings ...` toated)
+(Use `node --trace-warnings ...` to ated)
+Server is running at http://localhos
+Connected to database.
+MongooseError: Model.findById() no l
+    at Function.findById (D:\Studia\es\mongoose\lib\model.js:2110:11)
+    at D:\Studia\Rok 3\TAW_projekt_2oller.js:36:10
+    at Layer.handle [as handle_requekt_2\node_modules\express\lib\router
+    at next (D:\Studia\Rok 3\TAW_prob\router\route.js:144:13)
+    at Route.dispatch (D:\Studia\Rokexpress\lib\router\route.js:114:3)
+    at Layer.handle [as handle_requekt_2\node_modules\express\lib\router
+    at D:\Studia\Rok 3\TAW_projekt_2er\index.js:284:15
+    at param (D:\Studia\Rok 3\TAW_prib\router\index.js:365:14)
+    at param (D:\Studia\Rok 3\TAW_prib\router\index.js:376:14)
+    at Function.process_params (D:\S_modules\express\lib\router\index.js
+MongooseError: Model.findById() no l
+    at Function.findById (D:\Studia\es\mongoose\lib\model.js:2110:11)
+    at D:\Studia\Rok 3\TAW_projekt_2oller.js:36:10
+    at Layer.handle [as handle_requekt_2\node_modules\express\lib\router
+    at next (D:\Studia\Rok 3\TAW_prob\router\route.js:144:13)
+    at Route.dispatch (D:\Studia\Rokexpress\lib\router\route.js:114:3)
+dules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\Studia\Rok 3\TAW_projekt_2\node_modules\express\lib\router\index.js:421:3)
+MongooseError: Model.findById() no longer accepts a callback
+    at Function.findById (D:\Studia\Rok 3\TAW_projekt_2\node_modules\mongoose\lib\model.js:2110:11)
+    at D:\Studia\Rok 3\TAW_projekt_2\server\controllers\user.controller.js:36:10
+    at Layer.handle [as handle_request] (D:\Studia\Rok 3\TAW_projekt_2\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Studia\Rok 3\TAW_projekt_2\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\Studia\Rok 3\TAW_projekt_2\node_modules\express\lib\router\route.js:114:3)        
+    at Layer.handle [as handle_request] (D:\Studia\Rok 3\TAW_projekt_2\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Studia\Rok 3\TAW_projekt_2\node_modules\express\lib\router\index.js:284:15
+    at param (D:\Studia\Rok 3\TAW_projekt_2\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\Studia\Rok 3\TAW_projekt_2\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\Studia\Rok 3\TAW_projekt_2\node_modules\express\lib\router\index.js:4:421:3)

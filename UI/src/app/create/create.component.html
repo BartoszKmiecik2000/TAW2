@@ -1,0 +1,31 @@
+<h2 [hidden]="!(task._id == undefined)">Dodaj task</h2>
+<h2 [hidden]="!(task._id != undefined)">Edytuj task</h2>
+<hr>
+<div class="col-sm-5">
+    <form #form="ngForm" (ngSubmit)="SaveData(form)">
+        <div class="from-group" style="margin-bottom: 5px;">
+            <label>Nazwa</label>
+            <input type="text" name="Name" #Name="ngModel" [(ngModel)]="task.name" required class="form-control"/>
+            <div *ngIf="Name.errors && form.submitted" class="text-danger">
+                Wprowadź nazwę!
+            </div>
+        </div>
+        <div class="from-group" style="margin-bottom: 5px;">
+            <label>Data</label>
+            <input type="text" name="Date" #Date="ngModel" [(ngModel)]="task.date" required class="form-control"/>
+            <div *ngIf="Date.errors && form.submitted" class="text-danger">
+                Wprowadź datę!
+            </div>
+        </div>
+        <div class="from-group" style="margin-bottom: 15px;">
+            <label>Opis</label>
+            <input type="text" name="Content" #Content="ngModel" [(ngModel)]="task.content" required class="form-control"/>
+            <div *ngIf="Content.errors && form.submitted" class="text-danger">
+                Wprowadź opis!
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Save" class="btn btn-primary">
+        </div>
+    </form>
+</div>

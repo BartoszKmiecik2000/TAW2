@@ -1,0 +1,27 @@
+<h2>Lista tasków</h2>
+<hr>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Lp.</th>
+            <th>Nazwa</th>
+            <th>Data</th>
+            <th>Opis</th>
+            <th>Zarządzaj</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of tasks; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.date}}</td>
+            <td>{{item.content}}</td>
+            <td>
+                <a [routerLink]="['/edit', item._id]" class="btn btn-success">Edytuj</a>
+                &nbsp;
+                <a href="javascript:void(0);" class="btn btn-danger" (click)="deleteTask(item._id)">Usuń</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
